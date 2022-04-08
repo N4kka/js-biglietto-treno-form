@@ -1,13 +1,79 @@
-body {
-    background-color: aqua;
+/* COMMON */
+.fucsia {
+color: #b91450;
 }
 
-.data {
-    width: 100%;
+ul{
+    list-style: none;
+}
+
+/* BODY */
+body {
+    background-color: black;
+}
+
+.ms_bg {
+    height: 85vh;
+    background-color: #b91450;
+}
+
+.price-calculator {
+    width: 80%;
     height: 300px;
+    margin: 0 auto;
     background-color: white;
 }
 
+.data {
+    height: 50%;
+    justify-content: space-evenly;
+}
+
+.btn {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bf {
+    border: 1px solid #b91450;
+    padding: 5px 2.5px;
+}
+
 .ages {
-    width: 50px;
+    width: 120px;
+}
+
+.btn-styling {
+    background-color: lightgray;
+    border: 1px solid gray;
+    padding: 5px 2.5px;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* TICKET */
+.price-calculated {
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.ht {
+    height: 100px;
+}
+
+.g-bg {
+    background-color: gray;
+}
+
+.color {
+    color: black;
+}
+
+.mr-10 {
+    margin-right: 10px;
 }

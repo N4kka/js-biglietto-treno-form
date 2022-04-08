@@ -12,35 +12,64 @@
 </head>
 <body>
 
-    <div class="container-sm">
+    <div class="container-sm mt-5 text-center ms_bg p-4">
         <div class="title">
             <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         </div>
-    
-        <div class="data mt-4 rounded-3">
-            <div class="name">
-                <h4>Nome e Cognome</h4>
-                <label for="name"></label>
-                <input type="text" name="name" id="name">
+        <div class="price-calculator rounded-3">
+            <div class="data mt-4 pt-4 rounded-3 d-flex">
+                <div class="name">
+                    <h4 class="fucsia">Nome e Cognome</h4>
+                    <label for="name"></label>
+                    <input type="text" class="rounded-3 bf text-center" name="name" id="name">
+                </div>
+                <div class="km">
+                    <h4 class="fucsia">KM da percorrere</h4>
+                    <label for="km"></label>
+                    <input type="text" class="rounded-3 bf text-center" name="km" id="km">
+                </div>
+                <div class="age">
+                    <h4 class="fucsia">Fascia d'età</h4>
+                    <label for="userAge"></label>
+                    <select class="ages rounded-3 bf" name="age" id="age">
+                        <option value="Minorenne" id="Minorenne">Minorenne</option>
+                        <option value="Maggiorenne" id="Minorenne">Maggiorenne</option>
+                        <option value="Over 65" id="Minorenne">Over 65</option>
+                    </select>
+                </div>
             </div>
-            <div class="km">
-                <h4>KM da percorrere</h4>
-                <label for="km"></label>
-                <input type="text" name="km" id="km">
+            <div class="btn">
+                <button class="fucsia btn-styling rounded-3" id="generate">Genera</button>
+                <button class="fucsia btn-styling rounded-3" id="annulla">Annulla</button>
             </div>
-            <div class="age">
-                <h4>Fascia d'età</h4>
-                <label for="userAge"></label>
-                <select class="ages" name="age" id="age">
-                    <option value="Minorenne" id="Minorenne">Minorenne</option>
-                    <option value="Maggiorenne" id="Minorenne">Maggiorenne</option>
-                    <option value="Over 65" id="Minorenne">Over 65</option>
-                </select>
-            </div>
-            <button id="generate">Genera</button>
-            <button id="annulla">Annulla</button>
         </div>
-        <div id="price"></div>
+        <div class="title">
+            <h1 class="text-white mt-4">IL TUO BIGLIETTO</h1>
+        </div>
+        <div class="price-calculated rounded-3 ml-4">
+            <h4 class="text-start fw-bold p-4">DETTAGLIO PASSEGGERO </h4>
+            <div class="row">
+                <div class="col-lg-3 offset-lg-1 g-bg ht ml-4">
+                    <h4 class="color text-start">NOME PASSEGGERO</h4>
+                    <h6 class="color text-start">Jon Snow</h6>
+                </div>
+                <div class="col-lg-8 ht">
+                    <ul class="d-flex justify-content-around mr-10 fw-bold">
+                        <li>Offerta</li>
+                        <li>Carrozza</li>
+                        <li>Codice CP</li>
+                        <li>Costo Biglietto</li>
+                    </ul>
+
+                    <ul class="d-flex justify-content-around mr-10 mt-5">
+                        <li>Biglietto Standard</li>
+                        <li class="carrozza"></li>
+                        <li class="cp"></li>
+                        <li class="costo"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 
